@@ -1,0 +1,347 @@
+\hypertarget{classmy__template_1_1vector}{}\doxysection{my\+\_\+template\+::vector$<$ A\+RG $>$ Class Template Reference}
+\label{classmy__template_1_1vector}\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+
+
+Шаблон контейнерного vector, работающего с динамическим массивом. контейнерый класс позволяющий хранить однотипные объекты любого типа данных, выделение памяти происходит динамически  
+
+
+
+
+{\ttfamily \#include $<$vector.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__template_1_1vector_a9642399abe00233017a47608cee28797}\label{classmy__template_1_1vector_a9642399abe00233017a47608cee28797}} 
+typedef \mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ {\bfseries Iterator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__template_1_1vector_a5e39fab05331e1c9785ed7a92d1209e0}\label{classmy__template_1_1vector_a5e39fab05331e1c9785ed7a92d1209e0}} 
+\mbox{\hyperlink{classmy__template_1_1vector_a5e39fab05331e1c9785ed7a92d1209e0}{vector}} ()
+\begin{DoxyCompactList}\small\item\em Дефолтный конструктор, создает пустой вектор при этом размер вектора становится нулевым, а память уже выделяется в размере квоты (по умолчанию 15 элементов) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector_adbcc6e920fc421e952bb51b8efab1faa}{vector}} (A\+RG $\ast$ar)
+\begin{DoxyCompactList}\small\item\em Конструктор для инициализации класса vector указателем на область памяти, в которой уже хранятся элементы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector_a3f35c5a5516e06fcb377af36dad4037b}{vector}} (\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Копирующий конструктор, копирует один вектор в данный \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector_aefdb53ed88d56af18093225f4031fb39}{vector}} (\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&\&a)
+\begin{DoxyCompactList}\small\item\em Перемещающий конструктор, перемещает указатель на данные из одного вектора в данный \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmy__template_1_1vector_ab6c777b2dc236cf2908e64cfb95d80c3}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Метод определяет пуст ли вектор \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmy__template_1_1vector_a2f39c3c2d5b2f6a71eb08dba79d924d6}{size}} () const
+\begin{DoxyCompactList}\small\item\em Функция определения длины вектора \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__template_1_1vector_a25146c9b624a8540214d98a2b38e3011}\label{classmy__template_1_1vector_a25146c9b624a8540214d98a2b38e3011}} 
+int {\bfseries length} () const
+\item 
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \& \mbox{\hyperlink{classmy__template_1_1vector_a73a18759cc77807a03fa390b345c2ed5}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Функция очистки вектора \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \& \mbox{\hyperlink{classmy__template_1_1vector_afc7c250f67d6a3ba8aaf1291876f1fb4}{push\+\_\+back}} (const A\+RG \&val)
+\begin{DoxyCompactList}\small\item\em Функция помещает элемент в конец вектора \end{DoxyCompactList}\item 
+const A\+RG \& \mbox{\hyperlink{classmy__template_1_1vector_aebbf2c2a9d230d3bdfb41d296dd809ae}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Функция извлекает последний элемент вектора \end{DoxyCompactList}\item 
+const A\+RG \& \mbox{\hyperlink{classmy__template_1_1vector_a3852627e368c56ead863ad55fb2ab9a4}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Оператор индексирования для r-\/value. \end{DoxyCompactList}\item 
+A\+RG \& \mbox{\hyperlink{classmy__template_1_1vector_acb80b75ae1869b8f2d5d591411b63fd7}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\begin{DoxyCompactList}\small\item\em Оператор индексирования для l-\/value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \& \mbox{\hyperlink{classmy__template_1_1vector_afbd9a65e75de75af5ab984b19c4a4d0c}{operator=}} (const \mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&a)
+\begin{DoxyCompactList}\small\item\em копирует вектор -\/ аргумент в текущий экземпляр \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \& \mbox{\hyperlink{classmy__template_1_1vector_a87a09a0307df2200e28678d62dfeef82}{operator=}} (const \mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&\&a)
+\begin{DoxyCompactList}\small\item\em перемещает данные из вектор -\/ аргумент в текущий экземпляр \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector_ab045738a1782928d234af708c4199523}{begin}} () const
+\item 
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector_a20304bb61fcf944e8addd380e5f0aece}{end}} () const
+\item 
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector_af2f2110003e244a5436e1b2c5e6b0933}{find}} (int i)
+\item 
+\mbox{\Hypertarget{classmy__template_1_1vector_a1f2b54c27724dc5d167df0e3dfef308b}\label{classmy__template_1_1vector_a1f2b54c27724dc5d167df0e3dfef308b}} 
+\mbox{\hyperlink{classmy__template_1_1vector_a1f2b54c27724dc5d167df0e3dfef308b}{$\sim$vector}} ()
+\begin{DoxyCompactList}\small\item\em деструктор освобождает память выделенную под данные \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class A\+RG$>$\newline
+class my\+\_\+template\+::vector$<$ A\+R\+G $>$}
+
+Шаблон контейнерного vector, работающего с динамическим массивом. контейнерый класс позволяющий хранить однотипные объекты любого типа данных, выделение памяти происходит динамически 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmy__template_1_1vector_adbcc6e920fc421e952bb51b8efab1faa}\label{classmy__template_1_1vector_adbcc6e920fc421e952bb51b8efab1faa}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!vector@{vector}}
+\index{vector@{vector}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{vector()}{vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::\mbox{\hyperlink{classmy__template_1_1vector}{vector}} (\begin{DoxyParamCaption}\item[{A\+RG $\ast$}]{ar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для инициализации класса vector указателем на область памяти, в которой уже хранятся элементы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & указатель на область памяти в которой последовательно расположены элементы типа A\+RG соответствующие типу данного вектора. Происходит копирование самих элементов из той области памяти в вектор, а не копирование указателя size вектора будет равен количеству элементов в области памяти, now\+\_\+max\+\_\+size = size, т.\+о. при добавлении элемента в следующий раз выделится память в размере квоты. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy__template_1_1vector_a3f35c5a5516e06fcb377af36dad4037b}\label{classmy__template_1_1vector_a3f35c5a5516e06fcb377af36dad4037b}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!vector@{vector}}
+\index{vector@{vector}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{vector()}{vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::\mbox{\hyperlink{classmy__template_1_1vector}{vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Копирующий конструктор, копирует один вектор в данный 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на вектор который будет копироваться элементы копируются по значениям, а не по указателям, size = now\+\_\+max\+\_\+size = количеству элементов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy__template_1_1vector_aefdb53ed88d56af18093225f4031fb39}\label{classmy__template_1_1vector_aefdb53ed88d56af18093225f4031fb39}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!vector@{vector}}
+\index{vector@{vector}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{vector()}{vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::\mbox{\hyperlink{classmy__template_1_1vector}{vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&\&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Перемещающий конструктор, перемещает указатель на данные из одного вектора в данный 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на вектор из которого происходит перемещение значения длины вектора и текущей выделенной памяти как у параметра а, происходит копирование указателя из а в создаваемый экземпляр, после чего в векторе а указатель заменяется на нулевой \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+экземпляр класса а становится непригодным для использования после перемещения данных 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmy__template_1_1vector_ab045738a1782928d234af708c4199523}\label{classmy__template_1_1vector_ab045738a1782928d234af708c4199523}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!begin@{begin}}
+\index{begin@{begin}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+экземпляр итератора соответствующий начальному значению вектора 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmy__template_1_1vector_a73a18759cc77807a03fa390b345c2ed5}\label{classmy__template_1_1vector_a73a18759cc77807a03fa390b345c2ed5}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!clear@{clear}}
+\index{clear@{clear}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$A\+RG$>$\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция очистки вектора 
+
+\begin{DoxyReturn}{Returns}
+ссылку на экзмпляр данного объекта обнуляет длину вектора, элементы же остаются как мусор, если мусора слишком много, вызывается метод компрессии 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если вектор пуст \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmy__template_1_1vector_ab6c777b2dc236cf2908e64cfb95d80c3}\label{classmy__template_1_1vector_ab6c777b2dc236cf2908e64cfb95d80c3}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!empty@{empty}}
+\index{empty@{empty}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+bool \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод определяет пуст ли вектор 
+
+\begin{DoxyReturn}{Returns}
+логическое значение истины если вектор пуст (длина = 0) иначе -\/ ложь 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmy__template_1_1vector_a20304bb61fcf944e8addd380e5f0aece}\label{classmy__template_1_1vector_a20304bb61fcf944e8addd380e5f0aece}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!end@{end}}
+\index{end@{end}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+экземпляр итератора находящийся за пределами вектора 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmy__template_1_1vector_af2f2110003e244a5436e1b2c5e6b0933}\label{classmy__template_1_1vector_af2f2110003e244a5436e1b2c5e6b0933}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!find@{find}}
+\index{find@{find}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Iterator}} \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::find (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & значение положения итератора который требуется получить \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+экземпляр итератора находящийся на позиции поданного аргумента 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если параментр меньше нуля либо больше размера вектора \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmy__template_1_1vector_a87a09a0307df2200e28678d62dfeef82}\label{classmy__template_1_1vector_a87a09a0307df2200e28678d62dfeef82}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$A\+RG$>$\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&\&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+перемещает данные из вектор -\/ аргумент в текущий экземпляр 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на перемещаемый экземпляр \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на текущий экземпляр 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+старая информация, хранящаяся в векторе В КОТОРЫЙ копируют -\/ теряется, вектрый информацию из которого переместили становистся пустым происходит копирование указателя. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classmy__template_1_1vector_afbd9a65e75de75af5ab984b19c4a4d0c}\label{classmy__template_1_1vector_afbd9a65e75de75af5ab984b19c4a4d0c}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$A\+RG$>$\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$ A\+RG $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+копирует вектор -\/ аргумент в текущий экземпляр 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на копируемый экземпляр \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на текущий экземпляр 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+старая информация, хранящаяся в векторе В КОТОРЫЙ копируют -\/ теряется происходит копирование элементов по значениям, а не по указателям 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classmy__template_1_1vector_acb80b75ae1869b8f2d5d591411b63fd7}\label{classmy__template_1_1vector_acb80b75ae1869b8f2d5d591411b63fd7}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+A\+RG\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор индексирования для l-\/value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & индекс по которому осуществляется доступ к элементу вектора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на константное значение соответствующее индексу 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если вектор пуст, если значение индекса меньше нуля либо если больше длины вектора \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmy__template_1_1vector_a3852627e368c56ead863ad55fb2ab9a4}\label{classmy__template_1_1vector_a3852627e368c56ead863ad55fb2ab9a4}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+const A\+RG\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Оператор индексирования для r-\/value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & индекс по которому осуществляется доступ к элементу вектора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на константное значение соответствующее индексу 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если вектор пуст, если значение индекса меньше нуля либо если больше длины вектора \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmy__template_1_1vector_aebbf2c2a9d230d3bdfb41d296dd809ae}\label{classmy__template_1_1vector_aebbf2c2a9d230d3bdfb41d296dd809ae}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+const A\+RG\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция извлекает последний элемент вектора 
+
+\begin{DoxyReturn}{Returns}
+ссылку на константный объект типа данного шаблона размер вектора уменьшается на 1, сам элемент остается в нем как мусор, если мусора слишком много происходит освобождение памяти, после чего в векторе остается только 2 свободных места, вместо, например, 17 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & если вектор пуст \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmy__template_1_1vector_afc7c250f67d6a3ba8aaf1291876f1fb4}\label{classmy__template_1_1vector_afc7c250f67d6a3ba8aaf1291876f1fb4}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+\mbox{\hyperlink{classmy__template_1_1vector}{vector}}$<$A\+RG$>$\& \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const A\+RG \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция помещает элемент в конец вектора 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & значение копируется в конец вектора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на данный экземпляр вектоа если в векторе есть совбодное место -\/ вставляет объект в конец вектора, если нет -\/ перераспределяет память и выделяет дополнительную в размере квоты, длина вектора увеличивается на 1 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+при слишком больших значениях длины вектора может закончиться память на вашем устройстве и функция не сможет быть выполнена 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classmy__template_1_1vector_a2f39c3c2d5b2f6a71eb08dba79d924d6}\label{classmy__template_1_1vector_a2f39c3c2d5b2f6a71eb08dba79d924d6}} 
+\index{my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}!size@{size}}
+\index{size@{size}!my\_template::vector$<$ ARG $>$@{my\_template::vector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+int \mbox{\hyperlink{classmy__template_1_1vector}{my\+\_\+template\+::vector}}$<$ A\+RG $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция определения длины вектора 
+
+\begin{DoxyReturn}{Returns}
+значение текущей длины вектора Данная функция эквивалентна функции length 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vector.\+h\end{DoxyCompactItemize}

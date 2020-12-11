@@ -1,0 +1,83 @@
+\hypertarget{classmy__template_1_1_itvector}{}\doxysection{my\+\_\+template\+::Itvector$<$ A\+RG $>$ Class Template Reference}
+\label{classmy__template_1_1_itvector}\index{my\_template::Itvector$<$ ARG $>$@{my\_template::Itvector$<$ ARG $>$}}
+
+
+Шаблон итератора для контейнерного класса vector, работающего с динамическим массивом. Экземпляры данного класса дают последовательный доступ элементам класса vector.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_a20d48bde039a8f727feb57b84386e630}\label{classmy__template_1_1_itvector_a20d48bde039a8f727feb57b84386e630}} 
+\mbox{\hyperlink{classmy__template_1_1_itvector_a20d48bde039a8f727feb57b84386e630}{Itvector}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию для данного класса \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_acd343acc71c1282f66ea7d09367ab37f}\label{classmy__template_1_1_itvector_acd343acc71c1282f66ea7d09367ab37f}} 
+\mbox{\hyperlink{classmy__template_1_1_itvector_acd343acc71c1282f66ea7d09367ab37f}{Itvector}} (A\+RG $\ast$a)
+\begin{DoxyCompactList}\small\item\em Инициализирующий конструктор Инициализирует итератор значением ячейки памяти, в которой хранится текущий элемент массива vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmy__template_1_1_itvector_ad29c83f96192013667fb1d4d197d4012}{operator==}} (const \mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Перегруженный оператор сравнения \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmy__template_1_1_itvector_ace480dcc9873c462e947cb82f0a57ee4}{operator!=}} (const \mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Перегруженный оператор неравенства \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_a485d886fd0aecf47be5b6eeabe23a235}\label{classmy__template_1_1_itvector_a485d886fd0aecf47be5b6eeabe23a235}} 
+A\+RG \& \mbox{\hyperlink{classmy__template_1_1_itvector_a485d886fd0aecf47be5b6eeabe23a235}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Перегруженный оператор разыменовывания Помогает работать с итератором как с указателем, примененный к итератору , возвращает значение указателя на текущий элемент vector\textquotesingle{}a. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_a621eb6d381843592fd32024ed3244166}\label{classmy__template_1_1_itvector_a621eb6d381843592fd32024ed3244166}} 
+A\+RG $\ast$ {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_a62c1b060b10a0306b3f20b9bb4c2eae8}\label{classmy__template_1_1_itvector_a62c1b060b10a0306b3f20b9bb4c2eae8}} 
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \& \mbox{\hyperlink{classmy__template_1_1_itvector_a62c1b060b10a0306b3f20b9bb4c2eae8}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Перегруженный префиксный оператор инкремента Примененный к итератору дает доступ к значению следующего элемента в массиве vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmy__template_1_1_itvector_a22ac2e646ffa1d696118619036e4b810}\label{classmy__template_1_1_itvector_a22ac2e646ffa1d696118619036e4b810}} 
+\mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \mbox{\hyperlink{classmy__template_1_1_itvector_a22ac2e646ffa1d696118619036e4b810}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Перегруженный постфиксный оператор инкремента Примененный к итератору дает доступ к значению текущего элемента в массиве vector, а затем перемещает указатель на следующее значение ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class A\+RG$>$\newline
+class my\+\_\+template\+::\+Itvector$<$ A\+R\+G $>$}
+
+Шаблон итератора для контейнерного класса vector, работающего с динамическим массивом. Экземпляры данного класса дают последовательный доступ элементам класса vector. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmy__template_1_1_itvector_ace480dcc9873c462e947cb82f0a57ee4}\label{classmy__template_1_1_itvector_ace480dcc9873c462e947cb82f0a57ee4}} 
+\index{my\_template::Itvector$<$ ARG $>$@{my\_template::Itvector$<$ ARG $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!my\_template::Itvector$<$ ARG $>$@{my\_template::Itvector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+bool \mbox{\hyperlink{classmy__template_1_1_itvector}{my\+\_\+template\+::\+Itvector}}$<$ A\+RG $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Перегруженный оператор неравенства 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на другой экземпляр данного класса Сравнивает указатели на элементы массива vector для двух итераторов, в случае их отличия считается что итераторы не равны. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy__template_1_1_itvector_ad29c83f96192013667fb1d4d197d4012}\label{classmy__template_1_1_itvector_ad29c83f96192013667fb1d4d197d4012}} 
+\index{my\_template::Itvector$<$ ARG $>$@{my\_template::Itvector$<$ ARG $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!my\_template::Itvector$<$ ARG $>$@{my\_template::Itvector$<$ ARG $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class A\+RG $>$ \\
+bool \mbox{\hyperlink{classmy__template_1_1_itvector}{my\+\_\+template\+::\+Itvector}}$<$ A\+RG $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmy__template_1_1_itvector}{Itvector}}$<$ A\+RG $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Перегруженный оператор сравнения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & ссылка на другой экземпляр данного класса Сравнивает указатели на элементы массива vector для двух итераторов, в случае равенства считается что итераторы равны. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vector.\+h\end{DoxyCompactItemize}

@@ -6,32 +6,32 @@
 #define UNTITLED6_WORKER_H
 #include "Unit.h"
 namespace units {
-    class Master : public Unit {
+    class Worker : public Unit {
     private:
         int Work_Count;
         std::ostream& show(std::ostream&)const override;
         std::istream& get(std::istream&) override;
     public:
-        Master();
-        virtual Master* clone() const
+        explicit Worker(int id = 0, int Age = 20):Unit(id, Age), Work_Count(5){};
+        Worker* clone() const override
         {
-            return new Master(*this);
+            return new Worker(*this);
         }
         int iAm() const override
         {
             return 2;
         }
-        int get_Ageconst() const override
+        int get_Age() const override
         {
             return Age;
         }
-        int get_Enemy_Group() const override
+        my_template::vector<int> *get_Enemy_Group()  override
         {
-            return Enemy_group;
+            return &Enemy_group;
         }
-        int get_Friend_Group() const override
+        my_template::vector<int> *get_Friend_Group()  override
         {
-            return Friend_group;
+            return &Friend_group;
         }
         int get_id() const override
         {
@@ -47,15 +47,15 @@ namespace units {
         }
         void add_Enemy(int Enemy) override
         {
-            this->Enemy_group = Enemy;
+            Enemy_group.push_back(Enemy);
         }
         void add_Friend(int Friend) override
         {
-            this->Friend_group = Friend;
+            Friend_group.push_back(Friend);
         }
-        void set_Work(int Multiplier) override
+        void set_Work(int addition) override
         {
-            this->Work_Count = Multiplier;
+            this->Work_Count = addition;
         }
     };
 }

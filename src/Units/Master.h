@@ -1,37 +1,39 @@
-//
-// Created by Grigory on 11.12.2020.
-//
+
+
+
+
 
 #ifndef UNTITLED6_WORKER_H
 #define UNTITLED6_WORKER_H
 #include "Unit.h"
 namespace units {
+
     class Master : public Unit {
     private:
-        int Work_Multiplier;
+        int Work_Count;
         std::ostream& show(std::ostream&)const override;
         std::istream& get(std::istream&) override;
     public:
-        Master();
-        virtual Master* clone() const
+        explicit Master(int id = 0, int Age = 20):Unit(id, Age), Work_Count(2){};
+        Master* clone() const override
         {
             return new Master(*this);
         }
         int iAm() const override
         {
-            return 1;
+            return 2;
         }
         int get_Age() const override
         {
             return Age;
         }
-        int get_Enemy_Group() const override
+        my_template::vector<int> *get_Enemy_Group()  override
         {
-            return Enemy_group;
+            return &Enemy_group;
         }
-        int get_Friend_Group() const override
+        my_template::vector<int> *get_Friend_Group()  override
         {
-            return Friend_group;
+            return &Friend_group;
         }
         int get_id() const override
         {
@@ -47,19 +49,18 @@ namespace units {
         }
         void add_Enemy(int Enemy) override
         {
-            this->Enemy_group = Enemy;
+            Enemy_group.push_back(Enemy);
         }
         void add_Friend(int Friend) override
         {
-            this->Friend_group = Friend;
+            Friend_group.push_back(Friend);
         }
         void set_Work(int Multiplier) override
         {
-            this->Work_Multiplier = Multiplier;
+            this->Work_Count = Multiplier;
         }
+
     };
+
 }
-
-
-
 #endif //UNTITLED6_MASTER_H
