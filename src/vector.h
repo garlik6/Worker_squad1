@@ -110,6 +110,7 @@ namespace my_template {
     size вектора будет равен количеству элементов в области памяти, now_max_size = size, т.о. при добавлении элемента в следующий раз выделится память в размере квоты.
     */
         vector(ARG* ar) {
+            if (ar == nullptr) return;
             int i = (_msize(ar) / sizeof(ARG));
             array = new ARG[i];
             sz = i;
@@ -199,6 +200,23 @@ namespace my_template {
             if (i < 0)
                 throw std::out_of_range("invalid index");
             return array[i];
+        }
+        /*!
+        \brief Операция удаления элемента массива с последующим переформатированием
+        \param i  индекс по которому осуществляется доступ к элементу вектора
+        \throw std::out_of_range если вектор пуст, если значение индекса меньше нуля либо если больше длины вектора
+         \warning из-за множественного копирования крайне не эффективна рекомендуется обходиться без нее
+        */
+        void erase(int i)
+        {
+            if (i >= sz)
+                throw std::out_of_range("too big index");
+            if (i < 0)
+                throw std::out_of_range("invalid index");
+            for (int j = i; j < sz; ++j) {
+                array[j] = array[j+1];
+            }
+            pop_back();
         }
         /*!
     \brief Оператор индексирования для l-value

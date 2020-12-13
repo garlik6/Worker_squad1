@@ -5,8 +5,13 @@
 //#include "../src/Units/Unit.h"
 //#include "../src/Units/Master.h"
 //#include "../src/Units/Worker.h"
-//TEST(MasterConstructor, InitConstructor) {
 //
+//TEST(ConstructorWorker, InitConstructor) {
+//    units::Worker a(111, 50);
+//    ASSERT_EQ(111, a.get_id());
+//    ASSERT_EQ(50, a.get_Age());
+//    ASSERT_EQ(nullptr, a.get_Enemy_Group());
+//    ASSERT_EQ(nullptr, a.get_Friend_Group());
 //}
 //
 //TEST(Operator, Operator) {

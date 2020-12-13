@@ -1,21 +1,12 @@
-#include <iostream>
+//
+// Created by Grigory on 12.12.2020.
+//
 
-
-#include "Units/Unit.h"
-
-
-
+#include "Simulation/Simulation.h"
 
 
 
-#include "Units/Master.h"
-#include "Units/Worker.h"
-using namespace units;
-int main() {
-    my_template::vector<units::Unit*> crew;
-    units::Master a(111), b(222, 40);
-    units::Worker
-    crew.push_back(&a);
-
-
+int main()
+{
+    game();
 }
